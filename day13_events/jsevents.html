@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Events by Allen</h1>
+    <button class="btn1">PRESS ME</button>
+    <a
+      class="linkqcc"
+      href="https://www.qcc.cuny.edu"
+      target="_blank"
+      rel="noreferrer"
+      >VISIT QCC</a
+    >
+
+    <h2>Mouse events</h2>
+    <div class="colorcontainer">
+      <button class="btncolor">Change color</button>
+    </div>
+    <button class="btnolive">Change to olive</button>
+    <button class="btnorange">Change to orange</button>
+    <button class="btnreset">Change to reset</button>
+
+    <!-- Tuesday -->
+
+    <h2>Event object in key event</h2>
+    <button class="btnpressme">Press Me!</button>
+
+    <h2>Remove an item from the list</h2>
+    <p>click in the fruit to remove</p>
+    <ul id="listfruits">
+      <li>apples</li>
+      <li>oranges</li>
+      <li>kiwis</li>
+    </ul>
+
+    <!-- prevent default event -->
+    <h2>Prevent default of an event</h2>
+    <a
+      class="visitqcc"
+      href="https://www.qcc.cuny.edu"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Visit QCC</a
+    >
+
+    <!-- Window events -->
+    <h2>scroll event</h2>
+    <div id="content">
+      <h3>Scrollable sentence</h3>
+      <p>
+        This content is wider than the window, allowing for horizontal
+        scrolling.
+      </p>
+    </div>
+
+    <button class="btnscrollright">scroll right</button>
+
+    <h2>SLICE PHOTO GALLERY</h2>
+
+    <section class="maincontainer">
+      <div class="gallerycontainer">
+        <img class="galleryimage" src="image1.jpeg" alt="image 1" />
+        <img class="galleryimage" src="image2.jpeg" alt="image 2" />
+        <img class="galleryimage" src="image3.jpeg" alt="image 3" />
+        <img class="galleryimage" src="image4.jpeg" alt="image 4" />
+      </div>
+      <button class="btnleft">&#x276E;</button>
+      <button class="btnright">&#x276F;</button>
+    </section>
+
+    <div class="gotop">
+      <a href="#"><span>&#11161;</span></a>
+    </div>
+
+    <h2>FORM EVENTS</h2>
+
+    <form id="myform">
+      <!-- username -->
+      <div class="controlblock">
+        <label for="username">Enter a username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Type username..."
+          required
+        />
+      </div>
+
+      <!-- password -->
+      <div class="controlblock">
+        <label for="passwordfield">Password:</label>
+        <input
+          type="password"
+          id="passwordfield"
+          placeholder="Enter a password..."
+          required
+        />
+        <p class="passwordmsg">Must be 8+ characters</p>
+        <div class="passworderror"></div>
+      </div>
+
+      <!-- comments feedback: 50+ character and less than 2000 characters -->
+      <div class="controlblock">
+        <div class="commenterror"></div>
+      </div>
+
+      <button type="submit" class="submitbtn">Submit</button>
+    </form>
+
+    <!-- Display message after form is submitted -->
+    <div class="greeting">
+      <p>Welcome to form events <span></span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

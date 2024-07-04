@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask App</title>
+  </head>
+  <style>
+    body {
+      background-color: lightcyan;
+    }
+
+    .title {
+      text-align: center;
+      color: blueviolet;
+    }
+
+    .quote {
+      font-family: cursive;
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <h1 class="title">Welcome to my Flask app</h1>
+    <h2>Today's quote</h2>
+    <!-- Conditional statement -->
+    {% if quote1 %}
+    <p class="quote">{{quote1}}</p>
+    {% else %}
+    <p class="no_quote">No variable quote here!</p>
+    {% endif %}
+    <!-- For loop? -->
+    <ul>
+      {%for c in colors %}
+      <li>{{ c }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
