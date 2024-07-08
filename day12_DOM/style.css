@@ -1,3 +1,19 @@
 .changefontfamily {
   font-family: "arial-black";
 }
+
+.styletitle {
+  text-align: center;
+  color: magenta;
+}
+
+.info {
+  background-color: aqua;
+}
+
+.moreinfo {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 1px 1px 1px black;
+}

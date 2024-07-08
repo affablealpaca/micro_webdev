@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Temp Storage</h1>
+
+    <form class="myform" action="display.html">
+      <fieldset>
+        <legend>Survey</legend>
+        <div class="controlblock">
+          <label for="firstname">First name:</label>
+          <input type="text" name="username" id="firstname" />
+        </div>
+
+        <div class="controlblock">
+          <p>Please select your favorite Web language:</p>
+          <label for="html">HTML</label>
+          <input type="radio" name="fav_language" id="html" value="HTML" />
+          <label for="css">CSS</label>
+          <input type="radio" name="fav_language" id="css" value="CSS" />
+          <label for="js">JavaScript</label>
+          <input type="radio" name="fav_language" id="js" value="JavaScript" />
+        </div>
+
+        <div class="controlblock">
+          <input type="submit" value="Submit Survey" />
+        </div>
+      </fieldset>
+    </form>
+
+    <div class="displayresult"></div>
+
+    <h1>Transfer item to the cart</h1>
+    <div class="container">
+      <section class="item1">
+        <img src="item1.webp" alt="" class="imgitem1" />
+        <p class="itemname">Butterfly</p>
+        <p class="itemdescription_home">Fine fragrance mist</p>
+        <p>$17.95/<span class="saleprice">4.48</span></p>
+        <form class="formitem1" action="cart.html">
+          <label for="quantityitem1">Quantity</label>
+          <input
+            type="number"
+            name="item1quantity"
+            id="quantityitem1"
+            max="100"
+            min="0"
+            class="quantityinput"
+          />
+          <input type="submit" value="Add to Cart" class="item1btn" />
+        </form>
+      </section>
+    </div>
+
+    <script src="storage.js"></script>
+  </body>
+</html>

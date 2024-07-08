@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.myform fieldset {
+  width: 400px;
+  margin: 20px auto;
+  background-color: aliceblue;
+}
+
+.controlblock {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.item1 {
+  width: 300px;
+  height: 400px;
+  border: solid 2px black;
+  padding: 12px;
+}
+
+.item1 img {
+  height: 50%;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.itemname {
+  font-weight: bolder;
+  color: black;
+  font-size: 1.3em;
+}
+
+.itemdescription_home {
+  color: darkslategray;
+  margin-top: -20px;
+}
+
+.saleprice {
+  color: red;
+  font-size: 1.3em;
+}
+
+.item1btn {
+  display: block;
+  background-color: darkslategray;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+/* SHOPPING CART */
+.bagcontainer {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.itemimg {
+  width: 30%;
+  padding: 12px;
+}
+
+.itemprice {
+  width: 15%;
+}
+
+.itemdescription {
+  width: 30%;
+}
+
+.itemquantity {
+  width: 10%;
+}
+
+.totalprice_item {
+  width: 15%;
+}
